@@ -2,19 +2,19 @@ class Car:
     # Properties
     color = ""
     brand = ""
-    number_of_wheel = 4
-    munber_of_seats = 4
-    maxspedd = 0
+    number_of_wheels = 4
+    number_of_seats = 4
+    maxspeed = 0
 
-    # Construtor
-    def __init__(self, color, brand, number_of_wheel, munber_of_seats, maxspedd):
+    # Constructor
+    def __init__(self, color, brand, number_of_wheels, number_of_seats, maxspeed):
         self.color = color
         self.brand = brand
-        self.number_of_wheel = number_of_wheel
-        self.munber_of_seats = munber_of_seats
-        self.maxspedd = maxspedd
-    # Create method ser color
+        self.number_of_wheels = number_of_wheels
+        self.number_of_seats = number_of_seats
+        self.maxspeed = maxspeed
 
+    # Create method set color
     def setcolor(self, x):
         self.color = x
 
@@ -22,14 +22,13 @@ class Car:
         self.brand = x
 
     def setspeed(self, x):
-        self.maxspedd = x
+        self.maxspeed = x
 
     def printdata(self):
-        print("Color of this car is", self.color)
-        print("Brand of this car is", self.brand)
-        print("Max Speed of this car is", self.maxspedd)
+        print("Color of this car is ", self.color)
+        print("Brand of this car is ", self.brand)
+        print("Max speed of this car is ", self.maxspeed)
 
-    # Deconstrutor
-
+    # Deconstructor
     def __del__(self):
         print()

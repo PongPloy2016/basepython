@@ -1,15 +1,14 @@
-from Car import*
+from Car import *
 
-
-# สร้าง object หรือ Instance ของ class car
-object1 = Car('red', 'Toyata', 4, 4, 180)
-object1.printdata()
-
+# สร้าง Object หรือ Instance ของ Class car
+objcar1 = Car('red', 'Toyota', 4, 4, 180)
+objcar1.printdata()
 
 print()
 
-object2 = Car('red', 'Toyata', 4, 4, 200)
-# object2.setbrand = "Honda"
-# object2.setcolor = "Yeloow"
-# object2.setspeed = 200
-object2.printdata()
+objcar2 = Car('Yellow', 'Honda', 4, 4, 200)
+# objcar2.setbrand = "Honda"
+# objcar2.setcolor = "Yellow"
+# objcar2.setspeed = 200
+
+objcar2.printdata()
